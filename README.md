@@ -36,7 +36,7 @@
 
 Для ускорения процесса разработки использовался экземпляр MongoDB из состава пакета [Open Console Server](http://ospanel.io) 
 
-Для тестирования фнукционала REST API использовался [Postman](https://www.postman.com/)
+Для тестирования функционала REST API использовался [Postman](https://www.postman.com/)
 Так же прилагается коллекция запросов в Postman.
  
 
