@@ -1,0 +1,17 @@
+<%- include("../components/header.ejs"); %>
+<div class="container">
+    <div class="text-center">
+        <h1 class="mt-1 mb-1"><%- content %></h1>
+    </div>
+    <div class="text-center">
+        <div class="card mt-2 mx-auto w-50">
+            <div class="card-body">
+                <h5 class="card-title"><%- data.name %></h5>
+                <p class="card-text"><%- data.email %></p>
+                <p class="card-text"><%- data.phone %></p>
+                <p class="card-text"><%- data.address %></p>
+            </div>
+        </div>
+    </div>
+</div>
+<%- include("../components/footer.ejs") %>

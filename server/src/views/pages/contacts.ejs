@@ -1,0 +1,22 @@
+<%- include("../components/header.ejs"); %>
+<div class="container">
+    <div class="text-center">
+        <h1 class="mt-1 mb-1"><%- content %></h1>
+    </div>
+    <div class="d-flex flex-wrap justify-content-between">
+        <% data.forEach(function(user){ %>
+            <div class="card my-3 width-flex-item " >
+                <div class="card-body">
+                    <h5 class="card-title"><%- user.name %></h5>
+                    <p class="card-text"><%- user.email %></p>
+                    <p class="card-text"><%- user.address.street %></p>
+                    <p class="card-text"><%- user.address.suite %></p>
+                    <p class="card-text"><%- user.address.city %></p>
+                    <p class="card-text"><%- user.phone %></p>
+                    <p class="card-text"><%- user.website %></p>
+                </div>
+            </div>
+        <%  }); %>
+    </div>
+</div>
+<%- include("../components/footer.ejs") %>

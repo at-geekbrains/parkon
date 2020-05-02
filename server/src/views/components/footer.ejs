@@ -1,0 +1,24 @@
+<footer class="container text-center mt-1 mb-1">
+    <p>ITLect - Nur-Sultan - Copyright © 2020</p>
+</footer>
+  <!-- jQuery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Your custom scripts (optional) -->
+  <script type="text/javascript"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+    const socket = io.connect('http://localhost:3000');
+    socket.emit('hello', {name: "Artem"});
+    socket.on('hello2', (data) =>{
+      console.log("мы получили ответ от сервера", data)
+    });
+
+  </script>
+</body>
+</html>

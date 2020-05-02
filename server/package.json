@@ -1,0 +1,37 @@
+{
+  "name": "parkon-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server",
+    "server": "nodemon server",
+    "client-install": "npm install --prefix '../client/v0'",
+    "client": "npm run start --prefix ../client/v0",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "Abzal.Tankibayev",
+  "license": "ISC",
+  "dependencies": {
+    "@mdi/js": "^5.1.45",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.2",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.5.6",
+    "mongoose": "^5.9.10",
+    "morgan": "^1.10.0",
+    "node-fetch": "^2.6.0",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "socket.io": "^2.3.0",
+    "tm_mongodb": "0.0.5"
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "nodemon": "^2.0.3"
+  }
+}
