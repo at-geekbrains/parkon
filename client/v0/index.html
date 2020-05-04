@@ -1,12 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>ParkOn - Client - v0</title>
-</head>
+<html>
 <body>
-    <div class="text-center">
-        <p>Тестовая версия клиентского приложения для демонстрации</p>
-    </div>
+<canvas id="canvas"></canvas>
 </body>
+
+<script type="text/javascript" src="jsmpeg.min.js"></script>
+<script type="text/javascript">
+    window.onload = function() {
+        var context = new AudioContext();
+        // Setup all nodes
+    }
+    player = new JSMpeg.Player('ws://localhost:9999', {
+        canvas: document.getElementById('canvas') // Canvas should be a canvas DOM element
+    })
+</script>
 </html>

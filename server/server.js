@@ -62,4 +62,23 @@ app.use('/api/city', cityRoutes);
 app.use('/api/contact', contactRoutes);
 
 /*********** Server start ***********/
+Stream = require('node-rtsp-stream')
+const url=[
+    "rtsp://184.72.239.149:554/vod/mp4:BigBuckBunny_115k.mov",
+    "rtsp://stream.studio360.tv:554/nw/nw_576p",
+    "videoproxy2.echd.ru:41025/rtsplive/10.200.21.21:2033/rtsp___10.208.1.18_axis_media_media.amp",
+    "rtsp://admin:12345@192.168.0.209:554/mpeg4/ch01/main/av_stream",
+    "tsp://v8.cache8.c.youtube.com/CigLENy73wIaHwlcw_gs85OUchMYDSANFEgGUgx1c2VyX3VwbG9hZHMM/0/0/0/video.3gp",
+    'rtsp://v4.cache4.c.youtube.com/CigLENy73wIaHwlcw_gs85OUchMYESARFEgGUgx1c2VyX3VwbG9hZHMM/0/0/0/video.3gp',
+    "rtsp://rtsp.me/6f683196-c00b-4976-b5b8-263f672b9cb6"
+]
+stream = new Stream({
+    name: 'name',
+    streamUrl: url[1],
+    wsPort: 9999,
+    ffmpegOptions: { // options ffmpeg flags
+        '-stats': '', // an option with no neccessary value uses a blank string
+        '-r': 30 // options with required values specify the value after the key
+    }
+})
 httpServer.listen(port, () => { console.log(message.start); });
