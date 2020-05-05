@@ -19,6 +19,7 @@ const userRoutes = require('./src/routes/UserRoutes')
 const countryRoutes = require('./src/routes/CountryRoutes')
 const cityRoutes = require('./src/routes/CityRoutes')
 const contactRoutes = require('./src/routes/ContactRoutes')
+const streamRoutes = require('./src/routes/StreamRoutes')
 
 /*********** Server options ***********/
 const port = process.env.PORT || 3000
@@ -61,24 +62,74 @@ app.use('/api/country', countryRoutes);
 app.use('/api/city', cityRoutes);
 app.use('/api/contact', contactRoutes);
 
+/*********** Stream Routes ***********/
+app.use('/api/stream', streamRoutes);
+
 /*********** Server start ***********/
 Stream = require('node-rtsp-stream')
 const url=[
-    "rtsp://184.72.239.149:554/vod/mp4:BigBuckBunny_115k.mov",
     "rtsp://stream.studio360.tv:554/nw/nw_576p",
-    "videoproxy2.echd.ru:41025/rtsplive/10.200.21.21:2033/rtsp___10.208.1.18_axis_media_media.amp",
-    "rtsp://admin:12345@192.168.0.209:554/mpeg4/ch01/main/av_stream",
-    "tsp://v8.cache8.c.youtube.com/CigLENy73wIaHwlcw_gs85OUchMYDSANFEgGUgx1c2VyX3VwbG9hZHMM/0/0/0/video.3gp",
-    'rtsp://v4.cache4.c.youtube.com/CigLENy73wIaHwlcw_gs85OUchMYESARFEgGUgx1c2VyX3VwbG9hZHMM/0/0/0/video.3gp',
-    "rtsp://rtsp.me/6f683196-c00b-4976-b5b8-263f672b9cb6"
+    'rtmp://stream.studio360.tv:1935/nw/nw_576p',
+    'http://dprtv.phoenix-dnr.ru/first-republic-tv',
+    'http://12channel.bonus-tv.ru:80/stream549837052987/tracks-v1a1/mono.m3u8',
 ]
+
+    //
+    //                     rtsp://stream.the.sk/live/24cz/24cz.3gp
+    //                         rtsp://stream.the.sk/live/ta3.3gp
+    //                             rtsp://stream.the.sk/live/musicbox/musicbox.3gp
+    //                                 rtsp://stream.the.sk/live/ct24/ct24.3gp
+    //
+    //                                     rtsp://qtss1.telemakstream.net/3gpp/abmangas_fr_edge.sdp
+    //                                         rtsp://qtss1.telemakstream.net/3gpp/abaction_fr_edge.sdp
+    //                                             rtsp://qtss1.telemakstream.net/3gpp/ab4_fr_edge.sdp
+    //                                                 rtsp://qtss1.telemakstream.net/3gpp/ab3_fr_edge.sdp
+    //                                                     rtsp://qtss1.telemakstream.net/3gpp/tracetv_fr_edge.sdp
+    //                                                         rtsp://qtss1.telemakstream.net/3gpp/tv5europe_fr_edge.sdp
+    //                                                             rtsp://qtss1.telemakstream.net/3gpp/euronews_fr_edge.sdp
+    //                                                                 rtsp://qtss1.telemakstream.net/3gpp/canalz_fr_edge.sdp
+    //                                                                     rtsp://qtss1.telemakstream.net/3gpp/liberty_nl_edge.sdp
+    //                                                                         rtsp://qtss1.telemakstream.net/3gpp/kanaalz_nl_edge.sdp
+    //                                                                             rtsp://qtss1.telemakstream.net/3gpp/jimtv_nl_edge.sdp
+    //                                                                                 rtsp://qtss1.telemakstream.net/3gpp/vtm_nl_edge.sdp
+    //                                                                                     rtsp://qtss1.telemakstream.net/3gpp/tracetv_uk_edge.sdp
+    //                                                                                         rtsp://qtss1.telemakstream.net/3gpp/ebs_uk_edge.sdp
+    //                                                                                             rtsp://qtss1.telemakstream.net/3gpp/fashiontv_uk_edge.sdp
+    //                                                                                                 rtsp://qtss1.telemakstream.net/3gpp/euronews_uk_edge.sdp
+    //                                                                                                     rtsp://qtss1.telemakstream.net/3gpp/ebs_floor_edge.sdp
+    //
+    //                                                                                                         Просто потоковые песни:
+    // rtsp://66.220.31.130/3gp/miles.3gp
+    //     rtsp://66.220.31.130/3gp/baby.3gp
+    //         rtsp://66.220.31.130/3gp/lights.3gp
+    //             rtsp://66.220.31.130/3gp/taxi.3gp
+    //                 rtsp://66.220.31.130/3gp/cherish.3gp
+    //                     rtsp://66.220.31.130/3gp/complicated.3gp
+    //                         rtsp://66.220.31.130/3gp/cream.3gp
+    //                             rtsp://66.220.31.130/3gp/love.3gp
+    //                                 rtsp://66.220.31.130/3gp/nakita.3gp
+    //                                     rtsp://66.220.31.130/3gp/horizon.3gp
+    //                                         rtsp://66.220.31.130/3gp/feat.3gp
+    //                                             rtsp://66.220.31.130/3gp/crazy.3gp
+    //                                                 rtsp://66.220.31.130/3gp/game.3gp
+    //                                                     rtsp://66.220.31.130/3gp/summer.3gp
+    //                                                         rtsp://66.220.31.130/3gp/alibis.3gp
+    //                                                             rtsp://66.220.31.130/3gp/rule.3gp
+    //                                                                 rtsp://66.220.31.130/3gp/chance.3gp
+    //                                                                     rtsp://66.220.31.130/3gp/yeah.3gp
+    //                                                                         rtsp://66.220.31.130/Playlist3GP.sdp
+    //                                                                             rtsp://tributary.rave.ac.uk/3g/db/BUMP_N_RIND-mp4.3gp
+/********************************************************************************/
 stream = new Stream({
     name: 'name',
-    streamUrl: url[1],
+    streamUrl: url[3],
     wsPort: 9999,
     ffmpegOptions: { // options ffmpeg flags
         '-stats': '', // an option with no neccessary value uses a blank string
         '-r': 30 // options with required values specify the value after the key
     }
 })
+
+
+
 httpServer.listen(port, () => { console.log(message.start); });

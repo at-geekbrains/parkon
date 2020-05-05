@@ -1,16 +1,75 @@
 <html>
 <body>
-<canvas id="canvas"></canvas>
+<div
+    style="
+    width: 500px;
+    height: 500px;
+    border: 1px solid grey;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;"
+>
+    <div style="margin: 5px;max-height: 90%; max-width: 90%;">
+        <canvas id="canvas"></canvas>
+    </div>
+    <div style="border: 1px solid grey; max-height: 10%;flex-basis: 100%; display: flex;justify-content: space-between;">
+        <button onclick="player.play()">Play</button>
+        <button onclick="player.pause()">Pause</button>
+        <button onclick="player.stop()">Stop</button>
+    </div>
+</div>
+<div>
+    <select name="channel" id="channel"></select>
+</div>
 </body>
 
 <script type="text/javascript" src="jsmpeg.min.js"></script>
 <script type="text/javascript">
-    window.onload = function() {
-        var context = new AudioContext();
-        // Setup all nodes
+    let channels;
+    const urlChannel = 'http://localhost:3000/api/stream';
+    var select = document.getElementById('channel');
+
+    function status(response) {
+        if (response.status >= 200 && response.status < 300) {
+            return Promise.resolve(response)
+        } else {
+            return Promise.reject(new Error(response.statusText))
+        }
     }
+
+    function json(response) {
+        return response.json()
+    }
+
+    function getChannels(urlChannel) {
+        fetch(urlChannel)
+            .then(status)
+            .then(json)
+            .then(function(data) {
+                channels = (data);
+                for(let i = 0; i < channels.length; i++) {
+                    select.add(new Option(channels[i].displayName, channels[i]._id));
+                    console.log(channels[i])
+                }
+            })
+            .catch(function(error) {
+            console.log('Request failed', error);
+        });
+    }
+
+    getChannels(urlChannel); // Получаем список каналов с сервера
+    // setTimeout(()=>{
+    //     for(let i = 0; i < channels.length; i++) {
+    //         select.add(new Option(channels[i].displayName, channels[i]._id));
+    //         console.log(channels[i])
+    //     }
+    // },1000);
+
+    //const users = [...Array(count)].map((value,index) => getUser(url,index)).filter(Boolean);
+
     player = new JSMpeg.Player('ws://localhost:9999', {
-        canvas: document.getElementById('canvas') // Canvas should be a canvas DOM element
+        canvas: document.getElementById('canvas')
     })
 </script>
 </html>
