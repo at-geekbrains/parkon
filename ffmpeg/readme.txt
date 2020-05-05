@@ -1,1 +1,0 @@
-положить файлы в c:\windows\systems32
