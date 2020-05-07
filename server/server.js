@@ -20,6 +20,7 @@ const countryRoutes = require('./src/routes/CountryRoutes')
 const cityRoutes = require('./src/routes/CityRoutes')
 const contactRoutes = require('./src/routes/ContactRoutes')
 const streamRoutes = require('./src/routes/StreamRoutes')
+const mailRoutes = require('./src/routes/MailRoutes')
 
 /*********** Server options ***********/
 const port = process.env.PORT || 3000
@@ -61,6 +62,7 @@ app.use('/api/user', userRoutes);
 app.use('/api/country', countryRoutes);
 app.use('/api/city', cityRoutes);
 app.use('/api/contact', contactRoutes);
+app.use('/api/mail', mailRoutes);
 
 /*********** Stream Routes ***********/
 app.use('/api/stream', streamRoutes);
@@ -130,6 +132,9 @@ stream = new Stream({
     }
 })
 
-
-
 httpServer.listen(port, () => { console.log(message.start); });
+
+/*********** Mail ***********/
+// тестовая отправка
+//const mailer = require('./src/controllers/MailController')
+//mailer.testSend();
