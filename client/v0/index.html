@@ -1,4 +1,5 @@
 <html>
+<link rel="stylesheet" href="style.css">
 <body>
 <div
     style="
@@ -59,17 +60,9 @@
     }
 
     getChannels(urlChannel); // Получаем список каналов с сервера
-    // setTimeout(()=>{
-    //     for(let i = 0; i < channels.length; i++) {
-    //         select.add(new Option(channels[i].displayName, channels[i]._id));
-    //         console.log(channels[i])
-    //     }
-    // },1000);
 
-    //const users = [...Array(count)].map((value,index) => getUser(url,index)).filter(Boolean);
-
-    player = new JSMpeg.Player('ws://localhost:9999', {
-        canvas: document.getElementById('canvas')
-    })
+    let url = 'ws://localhost:9002';
+    let canvas = document.getElementById('canvas')
+    player = new JSMpeg.Player(url, {canvas})
 </script>
 </html>

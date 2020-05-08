@@ -68,7 +68,7 @@ app.use('/api/mail', mailRoutes);
 app.use('/api/stream', streamRoutes);
 
 /*********** Server start ***********/
-Stream = require('node-rtsp-stream')
+// Stream = require('node-rtsp-stream')
 const url=[
     "rtsp://stream.studio360.tv:554/nw/nw_576p",
     'rtmp://stream.studio360.tv:1935/nw/nw_576p',
@@ -122,15 +122,15 @@ const url=[
     //                                                                         rtsp://66.220.31.130/Playlist3GP.sdp
     //                                                                             rtsp://tributary.rave.ac.uk/3g/db/BUMP_N_RIND-mp4.3gp
 /********************************************************************************/
-stream = new Stream({
-    name: 'name',
-    streamUrl: url[3],
-    wsPort: 9999,
-    ffmpegOptions: { // options ffmpeg flags
-        '-stats': '', // an option with no neccessary value uses a blank string
-        '-r': 30 // options with required values specify the value after the key
-    }
-})
+// stream = new Stream({
+//     name: 'name',
+//     streamUrl: url[3],
+//     wsPort: 9999,
+//     ffmpegOptions: { // options ffmpeg flags
+//         '-stats': '', // an option with no neccessary value uses a blank string
+//         '-r': 30 // options with required values specify the value after the key
+//     }
+// })
 
 httpServer.listen(port, () => { console.log(message.start); });
 

@@ -1,0 +1,466 @@
+
+Активные подключения
+
+  Имя    Локальный адрес        Внешний адрес          Состояние
+  TCP    0.0.0.0:135            LAPTOP-76F9LCTG:0      LISTENING
+  TCP    0.0.0.0:445            LAPTOP-76F9LCTG:0      LISTENING
+  TCP    0.0.0.0:3000           LAPTOP-76F9LCTG:0      LISTENING
+  TCP    0.0.0.0:3306           LAPTOP-76F9LCTG:0      LISTENING
+  TCP    0.0.0.0:5040           LAPTOP-76F9LCTG:0      LISTENING
+  TCP    0.0.0.0:5357           LAPTOP-76F9LCTG:0      LISTENING
+  TCP    0.0.0.0:7680           LAPTOP-76F9LCTG:0      LISTENING
+  TCP    0.0.0.0:9999           LAPTOP-76F9LCTG:0      LISTENING
+  TCP    0.0.0.0:33060          LAPTOP-76F9LCTG:0      LISTENING
+  TCP    0.0.0.0:49664          LAPTOP-76F9LCTG:0      LISTENING
+  TCP    0.0.0.0:49665          LAPTOP-76F9LCTG:0      LISTENING
+  TCP    0.0.0.0:49666          LAPTOP-76F9LCTG:0      LISTENING
+  TCP    0.0.0.0:49667          LAPTOP-76F9LCTG:0      LISTENING
+  TCP    0.0.0.0:49668          LAPTOP-76F9LCTG:0      LISTENING
+  TCP    0.0.0.0:49669          LAPTOP-76F9LCTG:0      LISTENING
+  TCP    0.0.0.0:49670          LAPTOP-76F9LCTG:0      LISTENING
+  TCP    127.0.0.1:443          LAPTOP-76F9LCTG:0      LISTENING
+  TCP    127.0.0.1:3307         LAPTOP-76F9LCTG:0      LISTENING
+  TCP    127.0.0.1:5939         LAPTOP-76F9LCTG:0      LISTENING
+  TCP    127.0.0.1:6943         LAPTOP-76F9LCTG:0      LISTENING
+  TCP    127.0.0.1:8880         LAPTOP-76F9LCTG:0      LISTENING
+  TCP    127.0.0.1:9999         distrib:63363          ESTABLISHED
+  TCP    127.0.0.1:13579        LAPTOP-76F9LCTG:0      LISTENING
+  TCP    127.0.0.1:27017        LAPTOP-76F9LCTG:0      LISTENING
+  TCP    127.0.0.1:27017        distrib:55621          ESTABLISHED
+  TCP    127.0.0.1:27017        distrib:63375          ESTABLISHED
+  TCP    127.0.0.1:27017        distrib:63376          ESTABLISHED
+  TCP    127.0.0.1:27017        distrib:63377          ESTABLISHED
+  TCP    127.0.0.1:49671        distrib:49672          ESTABLISHED
+  TCP    127.0.0.1:49672        distrib:49671          ESTABLISHED
+  TCP    127.0.0.1:49673        LAPTOP-76F9LCTG:0      LISTENING
+  TCP    127.0.0.1:49673        distrib:49890          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:49892          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:49899          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:49902          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:49905          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:49907          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:49911          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:49913          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:49917          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:49918          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:49923          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:49926          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:49935          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:49937          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:49953          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:49955          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:49974          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:49975          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:49977          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:49978          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:49980          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:49981          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:49983          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:49984          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:49985          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:49987          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:49990          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:49991          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:49992          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:49993          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:49995          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:49997          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:49998          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50000          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50003          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50008          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50013          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50014          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50015          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50016          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50017          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50018          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50020          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50022          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50023          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50024          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50026          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50027          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50028          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50029          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50030          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50031          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50032          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50034          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50035          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50038          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50039          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50040          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50041          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50043          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50045          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50046          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50048          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50049          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50050          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50051          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50052          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50053          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50054          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50055          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50058          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50059          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50060          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50061          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50062          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50064          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50065          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50067          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50070          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50071          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50072          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50073          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50074          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50076          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50077          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50078          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50079          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50080          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50081          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50083          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50084          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50085          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50086          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50087          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50088          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50090          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50091          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50092          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50093          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50094          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50096          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50098          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50099          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50100          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50101          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50102          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50103          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50104          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50106          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50107          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50108          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50111          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50112          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50113          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50115          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50116          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50118          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50119          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50120          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50122          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50123          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50124          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50125          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50126          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50127          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50128          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50129          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50130          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50131          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50132          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50133          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50134          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50135          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50137          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50138          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50139          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50140          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50150          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50238          ESTABLISHED
+  TCP    127.0.0.1:49673        distrib:50242          ESTABLISHED
+  TCP    127.0.0.1:49890        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:49892        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:49899        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:49902        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:49905        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:49907        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:49911        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:49913        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:49917        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:49918        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:49923        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:49926        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:49935        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:49937        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:49953        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:49955        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:49974        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:49975        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:49977        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:49978        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:49980        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:49981        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:49983        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:49984        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:49985        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:49987        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:49990        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:49991        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:49992        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:49993        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:49995        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:49997        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:49998        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50000        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50003        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50008        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50013        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50014        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50015        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50016        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50017        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50018        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50020        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50022        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50023        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50024        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50026        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50027        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50028        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50029        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50030        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50031        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50032        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50034        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50035        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50038        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50039        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50040        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50041        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50043        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50045        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50046        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50048        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50049        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50050        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50051        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50052        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50053        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50054        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50055        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50058        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50059        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50060        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50061        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50062        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50064        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50065        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50067        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50070        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50071        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50072        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50073        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50074        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50076        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50077        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50078        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50079        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50080        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50081        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50083        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50084        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50085        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50086        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50087        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50088        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50090        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50091        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50092        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50093        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50094        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50096        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50098        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50099        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50100        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50101        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50102        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50103        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50104        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50106        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50107        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50108        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50111        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50112        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50113        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50115        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50116        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50118        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50119        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50120        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50122        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50123        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50124        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50125        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50126        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50127        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50128        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50129        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50130        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50131        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50132        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50133        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50134        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50135        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50137        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50138        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50139        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50140        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50150        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50238        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:50242        distrib:49673          ESTABLISHED
+  TCP    127.0.0.1:54392        LAPTOP-76F9LCTG:0      LISTENING
+  TCP    127.0.0.1:54426        LAPTOP-76F9LCTG:0      LISTENING
+  TCP    127.0.0.1:54672        LAPTOP-76F9LCTG:0      LISTENING
+  TCP    127.0.0.1:55621        distrib:27017          ESTABLISHED
+  TCP    127.0.0.1:63343        LAPTOP-76F9LCTG:0      LISTENING
+  TCP    127.0.0.1:63363        distrib:9999           ESTABLISHED
+  TCP    127.0.0.1:63375        distrib:27017          ESTABLISHED
+  TCP    127.0.0.1:63376        distrib:27017          ESTABLISHED
+  TCP    127.0.0.1:63377        distrib:27017          ESTABLISHED
+  TCP    127.0.0.1:64464        distrib:64465          ESTABLISHED
+  TCP    127.0.0.1:64465        distrib:64464          ESTABLISHED
+  TCP    127.0.0.1:64466        distrib:64467          ESTABLISHED
+  TCP    127.0.0.1:64467        distrib:64466          ESTABLISHED
+  TCP    127.0.0.1:64468        distrib:64469          ESTABLISHED
+  TCP    127.0.0.1:64469        distrib:64468          ESTABLISHED
+  TCP    127.0.0.1:65001        LAPTOP-76F9LCTG:0      LISTENING
+  TCP    192.168.56.1:139       LAPTOP-76F9LCTG:0      LISTENING
+  TCP    192.168.100.123:139    LAPTOP-76F9LCTG:0      LISTENING
+  TCP    192.168.100.123:49571  ec2-18-205-93-223:https  ESTABLISHED
+  TCP    192.168.100.123:49842  ec2-18-205-93-224:https  ESTABLISHED
+  TCP    192.168.100.123:49845  ec2-3-235-69-5:https   CLOSE_WAIT
+  TCP    192.168.100.123:49866  51.105.249.239:https   ESTABLISHED
+  TCP    192.168.100.123:49873  62.128.101.1:https     ESTABLISHED
+  TCP    192.168.100.123:49879  ec2-3-235-82-183:https  ESTABLISHED
+  TCP    192.168.100.123:49883  ec2-3-235-83-4:https   CLOSE_WAIT
+  TCP    192.168.100.123:49884  ec2-3-235-83-4:https   CLOSE_WAIT
+  TCP    192.168.100.123:49885  ec2-3-235-83-4:https   CLOSE_WAIT
+  TCP    192.168.100.123:49900  lo-in-f188:https       ESTABLISHED
+  TCP    192.168.100.123:49925  93.186.225.208:https   ESTABLISHED
+  TCP    192.168.100.123:49930  52.139.233.255:https   ESTABLISHED
+  TCP    192.168.100.123:49951  proglib:https          ESTABLISHED
+  TCP    192.168.100.123:49952  162.159.133.234:https  ESTABLISHED
+  TCP    192.168.100.123:49957  geekbrains:https       ESTABLISHED
+  TCP    192.168.100.123:49988  185.180.163.22:https   ESTABLISHED
+  TCP    192.168.100.123:50042  93.186.225.198:https   ESTABLISHED
+  TCP    192.168.100.123:50121  13.94.40.40:https      ESTABLISHED
+  TCP    192.168.100.123:50148  ec2-34-237-73-95:https  ESTABLISHED
+  TCP    192.168.100.123:50152  195.12.115.36:https    ESTABLISHED
+  TCP    192.168.100.123:50159  149.154.167.50:https   ESTABLISHED
+  TCP    192.168.100.123:50169  a2-19-114-10:https     ESTABLISHED
+  TCP    192.168.100.123:50181  ec2-3-235-69-5:https   CLOSE_WAIT
+  TCP    192.168.100.123:50194  84.38.188.87:https     ESTABLISHED
+  TCP    192.168.100.123:53238  ec2-3-235-72-249:https  ESTABLISHED
+  TCP    192.168.100.123:54643  a2-18-73-119:https     CLOSE_WAIT
+  TCP    192.168.100.123:54644  a2-18-73-119:https     CLOSE_WAIT
+  TCP    192.168.100.123:54645  a2-18-73-119:https     CLOSE_WAIT
+  TCP    192.168.100.123:54646  a2-18-73-119:https     CLOSE_WAIT
+  TCP    192.168.100.123:54647  a2-18-73-119:https     CLOSE_WAIT
+  TCP    192.168.100.123:54650  a2-18-78-157:http      CLOSE_WAIT
+  TCP    192.168.100.123:54651  a2-18-78-157:http      CLOSE_WAIT
+  TCP    192.168.100.123:54652  a2-18-78-157:http      CLOSE_WAIT
+  TCP    192.168.100.123:54653  a2-18-78-157:http      CLOSE_WAIT
+  TCP    192.168.100.123:54654  a2-18-78-157:http      CLOSE_WAIT
+  TCP    192.168.100.123:54655  a2-18-78-157:http      CLOSE_WAIT
+  TCP    192.168.100.123:56547  149.154.167.51:https   ESTABLISHED
+  TCP    192.168.100.123:63011  mail:https             ESTABLISHED
+  TCP    192.168.100.123:63101  lb-140-82-113-25-iad:https  ESTABLISHED
+  TCP    192.168.100.123:63166  104.244.42.72:https    ESTABLISHED
+  TCP    192.168.100.123:63182  lb-140-82-113-26-iad:https  ESTABLISHED
+  TCP    192.168.100.123:63295  lb-140-82-113-26-iad:https  ESTABLISHED
+  TCP    192.168.100.123:63329  lb-140-82-114-25-iad:https  ESTABLISHED
+  TCP    192.168.100.123:63351  195.12.115.15:https    ESTABLISHED
+  TCP    192.168.100.123:63354  ec2-52-4-240-244:https  ESTABLISHED
+  TCP    192.168.100.123:63378  ru:http                CLOSE_WAIT
+  TCP    192.168.100.123:63379  ru:https               CLOSE_WAIT
+  TCP    192.168.100.123:63386  ec2-34-239-193-231:https  ESTABLISHED
+  TCP    192.168.100.123:63387  ec2-34-239-193-231:https  ESTABLISHED
+  TCP    192.168.100.123:63388  li-in-f139:https       ESTABLISHED
+  TCP    192.168.100.123:63394  162.159.136.234:https  ESTABLISHED
+  TCP    192.168.100.123:63405  ip13:https             ESTABLISHED
+  TCP    192.168.100.123:63410  68.232.34.200:https    ESTABLISHED
+  TCP    192.168.100.123:63417  portal:https           CLOSE_WAIT
+  TCP    192.168.100.123:63418  ru:http                ESTABLISHED
+  TCP    192.168.100.123:63420  62.128.100.41:https    ESTABLISHED
+  TCP    192.168.100.123:63421  ru:https               ESTABLISHED
+  TCP    [::]:135               LAPTOP-76F9LCTG:0      LISTENING
+  TCP    [::]:445               LAPTOP-76F9LCTG:0      LISTENING
+  TCP    [::]:3000              LAPTOP-76F9LCTG:0      LISTENING
+  TCP    [::]:3306              LAPTOP-76F9LCTG:0      LISTENING
+  TCP    [::]:5357              LAPTOP-76F9LCTG:0      LISTENING
+  TCP    [::]:7680              LAPTOP-76F9LCTG:0      LISTENING
+  TCP    [::]:9999              LAPTOP-76F9LCTG:0      LISTENING
+  TCP    [::]:33060             LAPTOP-76F9LCTG:0      LISTENING
+  TCP    [::]:49664             LAPTOP-76F9LCTG:0      LISTENING
+  TCP    [::]:49665             LAPTOP-76F9LCTG:0      LISTENING
+  TCP    [::]:49666             LAPTOP-76F9LCTG:0      LISTENING
+  TCP    [::]:49667             LAPTOP-76F9LCTG:0      LISTENING
+  TCP    [::]:49668             LAPTOP-76F9LCTG:0      LISTENING
+  TCP    [::]:49669             LAPTOP-76F9LCTG:0      LISTENING
+  TCP    [::]:49670             LAPTOP-76F9LCTG:0      LISTENING
+  UDP    0.0.0.0:3702           *:*                    
+  UDP    0.0.0.0:3702           *:*                    
+  UDP    0.0.0.0:3702           *:*                    
+  UDP    0.0.0.0:3702           *:*                    
+  UDP    0.0.0.0:5050           *:*                    
+  UDP    0.0.0.0:5353           *:*                    
+  UDP    0.0.0.0:5353           *:*                    
+  UDP    0.0.0.0:5353           *:*                    
+  UDP    0.0.0.0:5353           *:*                    
+  UDP    0.0.0.0:5353           *:*                    
+  UDP    0.0.0.0:5353           *:*                    
+  UDP    0.0.0.0:5353           *:*                    
+  UDP    0.0.0.0:5353           *:*                    
+  UDP    0.0.0.0:5353           *:*                    
+  UDP    0.0.0.0:5355           *:*                    
+  UDP    0.0.0.0:49476          *:*                    
+  UDP    0.0.0.0:52656          *:*                    
+  UDP    0.0.0.0:59306          *:*                    
+  UDP    0.0.0.0:61117          *:*                    
+  UDP    127.0.0.1:1900         *:*                    
+  UDP    127.0.0.1:48201        *:*                    
+  UDP    127.0.0.1:50314        *:*                    
+  UDP    127.0.0.1:54233        *:*                    
+  UDP    127.0.0.1:61112        *:*                    
+  UDP    192.168.56.1:137       *:*                    
+  UDP    192.168.56.1:138       *:*                    
+  UDP    192.168.56.1:1900      *:*                    
+  UDP    192.168.56.1:2177      *:*                    
+  UDP    192.168.56.1:5353      *:*                    
+  UDP    192.168.56.1:5353      *:*                    
+  UDP    192.168.56.1:54231     *:*                    
+  UDP    192.168.100.123:137    *:*                    
+  UDP    192.168.100.123:138    *:*                    
+  UDP    192.168.100.123:1900   *:*                    
+  UDP    192.168.100.123:2177   *:*                    
+  UDP    192.168.100.123:5353   *:*                    
+  UDP    192.168.100.123:54232  *:*                    
+  UDP    [::]:3702              *:*                    
+  UDP    [::]:3702              *:*                    
+  UDP    [::]:3702              *:*                    
+  UDP    [::]:3702              *:*                    
+  UDP    [::]:5353              *:*                    
+  UDP    [::]:5353              *:*                    
+  UDP    [::]:5353              *:*                    
+  UDP    [::]:5353              *:*                    
+  UDP    [::]:5353              *:*                    
+  UDP    [::]:5355              *:*                    
+  UDP    [::]:49477             *:*                    
+  UDP    [::]:52657             *:*                    
+  UDP    [::]:59307             *:*                    
+  UDP    [::]:61118             *:*                    
+  UDP    [::1]:1900             *:*                    
+  UDP    [::1]:5353             *:*                    
+  UDP    [::1]:5353             *:*                    
+  UDP    [::1]:54230            *:*                    
+  UDP    [fe80::80e8:2a70:81f6:a899%24]:1900  *:*                    
+  UDP    [fe80::80e8:2a70:81f6:a899%24]:2177  *:*                    
+  UDP    [fe80::80e8:2a70:81f6:a899%24]:54228  *:*                    
+  UDP    [fe80::f0ef:b34f:2c81:5519%21]:1900  *:*                    
+  UDP    [fe80::f0ef:b34f:2c81:5519%21]:2177  *:*                    
+  UDP    [fe80::f0ef:b34f:2c81:5519%21]:54229  *:*                    
