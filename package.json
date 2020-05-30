@@ -11,8 +11,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server",
     "server": "nodemon server",
-    "client-install": "npm install --prefix '../client/v0'",
-    "client": "npm run start --prefix ../client/v0",
+    "client-install": "npm install --prefix './client/v0'",
+    "client": "npm run start --prefix ./client/v0",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "keywords": [],
