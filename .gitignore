@@ -1,7 +1,7 @@
 #тестовый клиент нужен только во время разработки для просмотра видео
-client
+client/
 distrib
-.idea
+.idea/
 # Logs
 logs
 *.log
