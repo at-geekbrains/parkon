@@ -1,24 +1,15 @@
 <html>
 <link rel="stylesheet" href="style.css">
 <body>
-<div
-    style="
-    width: 500px;
-    height: 500px;
-    border: 1px solid grey;
-    padding: 5px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;"
->
-    <div style="margin: 5px;max-height: 90%; max-width: 90%;">
+
+    <div class="canvas_wraper">
         <canvas id="canvas"></canvas>
     </div>
-    <div style="border: 1px solid grey; max-height: 10%;flex-basis: 100%; display: flex;justify-content: space-between;">
-        <button onclick="player.play()">Play</button>
-        <button onclick="player.pause()">Pause</button>
-        <button onclick="player.stop()">Stop</button>
-    </div>
+
+<div style="border: 1px solid grey; max-width: 960px;">
+    <button onclick="player.play()">Play</button>
+    <button onclick="player.pause()">Pause</button>
+    <button onclick="player.stop()">Stop</button>
 </div>
 <div>
     <select name="channel" id="channel"></select>
@@ -61,7 +52,7 @@
 
     getChannels(urlChannel); // Получаем список каналов с сервера
 
-    let url = 'ws://localhost:9002';
+    let url = 'ws://localhost:9001';
     let canvas = document.getElementById('canvas')
     player = new JSMpeg.Player(url, {canvas})
 </script>

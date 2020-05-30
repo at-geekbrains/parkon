@@ -29,6 +29,21 @@ const sendMail = async (
     }
 }
 
+module.exports.notification = async function(email, password) {
+    try {
+        const to = email;
+        const subject = 'ParkOn - Уведомление о регистрации в системе';
+        const text = `Вы зарегистрированы как ${email} с паролем ${password}. Если письмо попало к вам ошибочно, просто проигнорируйте его.`;
+        const html = `<p>Вы зарегистрированы как <strong>${email}</strong> с паролем <strong>${password}</strong>.</p><p>Если письмо попало к вам ошибочно, просто проигнорируйте его.</p>`;;
+        sendMail(to, subject, text, html).then((sendResult)=>{
+            console.log(sendResult);
+            console.log(text);
+            res.status(201).json(sendResult)
+        });
+    } catch (e) {
+        console.log(e.message);
+    }
+}
 
 module.exports.send = async function (req, res) {
     try {

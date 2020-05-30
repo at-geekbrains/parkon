@@ -3,6 +3,7 @@ const jwt = require('jsonwebtoken')
 const User = require('../models/UserModel')
 const keys = require('../config/keys')
 const errorHandler = require('../utils/errorHandler')
+const mailer = require('../controllers/MailController')
 
 module.exports.login = async function (req, res) {
     const candidate = await User.findOne({email: req.body.email})
@@ -43,6 +44,7 @@ module.exports.register = async function (req, res) {
         })
         try {
             await user.save().then(() => console.log('User created!'))
+            await mailer.notification(req.body.email, req.body.password);
             res.status(201).json(user)
         }
         catch (e) {
