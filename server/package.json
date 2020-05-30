@@ -13,7 +13,6 @@
     "server": "nodemon server",
     "client-install": "npm install --prefix '../client/v0'",
     "client": "npm run start --prefix ../client/v0",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "keywords": [],
