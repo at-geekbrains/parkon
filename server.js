@@ -73,7 +73,7 @@ const url=[
     "rtsp://stream.studio360.tv:554/nw/nw_576p",
     'rtmp://stream.studio360.tv:1935/nw/nw_576p',
     'http://dprtv.phoenix-dnr.ru/first-republic-tv',
-    'http://12channel.bonus-tv.ru:80/stream549837052987/tracks-v1a1/mono.m3u8',
+    // 'http://12channel.bonus-tv.ru:80/stream549837052987/tracks-v1a1/mono.m3u8',
 ]
 
     //
