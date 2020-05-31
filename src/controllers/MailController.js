@@ -1,13 +1,14 @@
-const User = require('../models/UserModel')
+const User = require('../models/UserModel');
+const Mail = require('../config/mail');
 const nodemailer = require('nodemailer');
 
 let transporter = nodemailer.createTransport({
-    host: 'smtp.mail.ru',
-    port: 465,
-    secure: true,
+    host: Mail.host,
+    port: Mail.port,
+    secure: Mail.secure,
     auth: {
-        user: 'Info.ParkOn@mail.ru', // Тестовый ящик
-        pass: 'DE#sw2aq1'
+        user: Mail.auth.user, // Тестовый ящик
+        pass: Mail.auth.pass
     }
 });
 const sendMail = async (
@@ -18,7 +19,7 @@ const sendMail = async (
 ) => {
     try {
         return await transporter.sendMail({
-            from: '"ParkOnProjectsTeam" <Info.ParkOn@mail.ru>',
+            from: `"ParkOnProjectsTeam" <${Mail.auth.user}>`,
             to: to,
             subject: subject,
             text: text,

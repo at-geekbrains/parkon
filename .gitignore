@@ -1,6 +1,9 @@
 #тестовый клиент нужен только во время разработки для просмотра видео
 client/
 distrib
+src/config/db.dev.js
+src/config/keys.dev.js
+src/config/mail.dev.js
 .idea/
 # Logs
 logs

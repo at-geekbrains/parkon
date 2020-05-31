@@ -1,9 +1,9 @@
-ConsumerStream = require('node-rtsp-stream')
+const ConsumerStream = require('node-rtsp-stream')
 const Stream = require('../models/StreamModel')
 const User = require('../models/UserModel')
 const errorHandler = require('../utils/errorHandler')
-const streamConfig = require('../config/stream')
-const demoStream=[ // некторые рабочие каналы, на всякий случай
+
+const demoStream=[ // некоторые рабочие каналы, на всякий случай
     "rtsp://stream.studio360.tv:554/nw/nw_576p",
     'rtmp://stream.studio360.tv:1935/nw/nw_576p',
     'http://dprtv.phoenix-dnr.ru/first-republic-tv',
@@ -18,7 +18,7 @@ const showStream = (stream) => {
     const options = {
         name: stream.displayName,
         streamUrl: stream.url,
-        wsPort: process.env.PORT,//stream.wsPort,
+        wsPort: stream.wsPort,
         ffmpegOptions: { '-stats': '', '-r': 30 }
     }
     return new ConsumerStream(options);
@@ -87,18 +87,20 @@ module.exports.open = async function(req, res){
     try {
         const stream = await Stream.findById(req.params.id) // Ожидаем со стороны клиентского приложения идентификатор стрима
         const consumer = await User.findById(req.body.id) // Ожидаем со стороны клиентского приложения идентификатор пользователя
-        if(stream._id && consumer._id) { // Проверяем наличие в БД стрима и пользователя
-
+        if(stream._id && consumer._id) {
+            // Проверяем наличие в БД стрима и пользователя
             // Показывается ли этот поток уже
             const index = currentStream.findIndex(item => item._id.toString() == stream._id.toString() )
 
-            if(index >= 0){ // Если такой стрим активен и просматривается ....
+            if(index >= 0){
+                    // Если такой стрим активен и просматривается ....
                     // TODO - здесь возможен вариант что у пользователя на этот стрим может быть запущено несколько вкладок,
                     //  надо как то их различать, или не надо?
                     currentStream[index].consumers.push({consumerId: consumer._id, consumerStatus: 0}); // Добавить идентификатор зрителя
                     res.status(200).json(currentStream[index].wsPort) // Передаем на клиента информацию о запущенном стриме
                 }
-            else{ // Если этот стрим сейчас не просматривается...
+            else{
+                // Если этот стрим сейчас не просматривается...
                 stream.consumers.push({consumerId: consumer._id, consumerStatus: 0}); // Добавить идентификатор зрителя
                 wsCurrentPort++;
                 stream.wsPort;// = wsCurrentPort;
@@ -110,7 +112,6 @@ module.exports.open = async function(req, res){
                 //activeConsumerStream[activeConsumerStream.length - 1].show.start();
                 res.status(200).json(stream.wsPort) // Передаем на клиента информацию о запущенном стриме
             }
-            //console.log(currentStream)
         }
     } catch (e) {
         errorHandler(res, e)
