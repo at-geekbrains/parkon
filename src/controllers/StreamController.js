@@ -103,7 +103,7 @@ module.exports.open = async function(req, res){
                 // Если этот стрим сейчас не просматривается...
                 stream.consumers.push({consumerId: consumer._id, consumerStatus: 0}); // Добавить идентификатор зрителя
                 wsCurrentPort++;
-                stream.wsPort;// = wsCurrentPort;
+                stream.wsPort = 443;// = wsCurrentPort;
                 currentStream.push(stream); // Поместить стрим в массив просматриваемых сейчас стримов
                 activeConsumerStream.push({
                     streamId: stream._id,

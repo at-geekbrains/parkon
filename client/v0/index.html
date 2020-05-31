@@ -19,7 +19,7 @@
 <script type="text/javascript" src="jsmpeg.min.js"></script>
 <script type="text/javascript">
     let host = 'https://agile-river-71458.herokuapp.com';
-	let HOST = host.replace(/^https/, 'wss');
+	let HOST = host.replace(/^https/, 'ws');
 	let channels;
     const urlChannel = 'https://agile-river-71458.herokuapp.com/api/stream';
     var select = document.getElementById('channel');
@@ -54,7 +54,7 @@
 
     getChannels(urlChannel); // Получаем список каналов с сервера
 
-    let url = HOST + '9001';
+    let url = HOST + '443';
     let canvas = document.getElementById('canvas')
     player = new JSMpeg.Player(url, {canvas})
 </script>
