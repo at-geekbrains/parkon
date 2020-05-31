@@ -18,7 +18,7 @@ const showStream = (stream) => {
     const options = {
         name: stream.displayName,
         streamUrl: stream.url,
-        wsPort: stream.wsPort,
+        wsPort: null,//stream.wsPort,
         ffmpegOptions: { '-stats': '', '-r': 30 }
     }
     return new ConsumerStream(options);
