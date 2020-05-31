@@ -38,8 +38,6 @@ module.exports.notification = async function(email, password) {
         const html = `<p>Вы зарегистрированы как <strong>${email}</strong> с паролем <strong>${password}</strong>.</p><p>Если письмо попало к вам ошибочно, просто проигнорируйте его.</p>`;;
         sendMail(to, subject, text, html).then((sendResult)=>{
             console.log(sendResult);
-            console.log(text);
-            res.status(201).json(sendResult)
         });
     } catch (e) {
         console.log(e.message);
