@@ -18,7 +18,7 @@ const showStream = (stream) => {
     const options = {
         name: stream.displayName,
         streamUrl: stream.url,
-        wsPort: stream.wsPort,
+        wsPort: process.env.PORT,//stream.wsPort,
         ffmpegOptions: { '-stats': '', '-r': 30 }
     }
     return new ConsumerStream(options);
@@ -105,7 +105,7 @@ module.exports.open = async function(req, res){
                 currentStream.push(stream); // Поместить стрим в массив просматриваемых сейчас стримов
                 activeConsumerStream.push({
                     streamId: stream._id,
-                    show: showStream(stream)
+                    show: showStream(stream)//показ потока
                 });
                 //activeConsumerStream[activeConsumerStream.length - 1].show.start();
                 res.status(200).json(stream.wsPort) // Передаем на клиента информацию о запущенном стриме
