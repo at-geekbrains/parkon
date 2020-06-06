@@ -93,7 +93,7 @@ module.exports.open = async function(req, res){
             // Показывается ли этот поток уже
             const index = currentStream.findIndex(item => item._id.toString() == stream._id.toString())
             nnmInit(); // создаем тестовую запись в nn_output
-            const nnm = await Nnm.find();
+            const nnm = await Nnm.findOne({cam_id: stream._id.toString()});
             console.log(nnm);
             if(index >= 0){
                     // Если такой стрим активен и просматривается ....

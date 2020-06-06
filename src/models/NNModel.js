@@ -33,4 +33,4 @@ const nnSchema = new Schema({
     },
 })
 
-module.exports = mongoose.model('nn_output', nnSchema)
+module.exports = mongoose.model('nn_outputs', nnSchema)
