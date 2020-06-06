@@ -101,8 +101,9 @@ module.exports.open = async function(req, res){
                 currentStream[index].consumers.push({consumerId: consumer._id, consumerStatus: 0});
                 // Передаем на клиента информацию о запущенном стриме
                 res.status(200).json({
-                        'port': currentStream[index].wsPort,
-                        'output': nnm
+                        // 'port': currentStream[index].wsPort,
+                        // 'output': nnm
+                    nnm
                     })
                 }
             else{
@@ -118,8 +119,9 @@ module.exports.open = async function(req, res){
                 //activeConsumerStream[activeConsumerStream.length - 1].show.start();
                 // Передаем на клиента информацию о запущенном стриме
                 res.status(200).json({
-                    'port': stream.wsPort,
-                    'output': nnm
+                    // 'port': stream.wsPort,
+                    // 'output': nnm
+                    nnm
                 })
             }
         }
