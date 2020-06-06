@@ -93,7 +93,7 @@ module.exports.open = async function(req, res){
             // Показывается ли этот поток уже
             const index = currentStream.findIndex(item => item._id.toString() == stream._id.toString() )
             const nnm = Nnm.find({'cam_id': stream._id.toString()}).limit(1);
-            console.log(nnm);
+            console.log(nnm.result);
             if(index >= 0){
                     // Если такой стрим активен и просматривается ....
                     // TODO - здесь возможен вариант что у пользователя на этот стрим может быть запущено несколько вкладок,
@@ -103,7 +103,7 @@ module.exports.open = async function(req, res){
                 // Передаем на клиента информацию о запущенном стриме
                 res.status(200).json({
                         'port': currentStream[index].wsPort,
-                        'output': nnm
+                        'output': nnm.result
                     })
                 }
             else{
