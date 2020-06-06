@@ -94,7 +94,7 @@ module.exports.open = async function(req, res){
             const index = currentStream.findIndex(item => item._id.toString() == stream._id.toString())
             nnmInit(); // создаем тестовую запись в nn_output
             const nnm = await Nnm.findOne({cam_id: stream._id.toString()});
-            console.log(nnm);
+            //console.log(nnm);
             if(index >= 0){
                     // Если такой стрим активен и просматривается ....
                     // TODO - здесь возможен вариант что у пользователя на этот стрим может быть запущено несколько вкладок,
@@ -162,15 +162,9 @@ const nnmInit = async () => {
     const nnm = new Nnm({
         timestamp: Date.now().toString(),
         cam_id: "5ed27b0f8c07852e00cf1a90",
-        result: {
-            'lat1 lon1': 0,
-            'lat2 lon2': 0,
-            'lat3 lon3': 0,
-            'lat4 lon4': 1,
-            'lat5 lon5': 0,
-            'lat6 lon6': 1,
-            'lat7 lon7': 0,
-        }
+        result: [
+           0,0,0,1,0,1,0
+        ]
     })
     try {
         await nnm.save()
