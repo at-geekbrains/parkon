@@ -1,6 +1,7 @@
 const ConsumerStream = require('node-rtsp-stream')
 const Stream = require('../models/StreamModel')
 const User = require('../models/UserModel')
+const Nnm = require('../models/NNModel')
 const errorHandler = require('../utils/errorHandler')
 
 const demoStream=[ // некоторые рабочие каналы, на всякий случай
@@ -91,13 +92,18 @@ module.exports.open = async function(req, res){
             // Проверяем наличие в БД стрима и пользователя
             // Показывается ли этот поток уже
             const index = currentStream.findIndex(item => item._id.toString() == stream._id.toString() )
-
+            const nnm = Nnm.find({'cam_id': stream._id.toString()});
             if(index >= 0){
                     // Если такой стрим активен и просматривается ....
                     // TODO - здесь возможен вариант что у пользователя на этот стрим может быть запущено несколько вкладок,
                     //  надо как то их различать, или не надо?
-                    currentStream[index].consumers.push({consumerId: consumer._id, consumerStatus: 0}); // Добавить идентификатор зрителя
-                    res.status(200).json(currentStream[index].wsPort) // Передаем на клиента информацию о запущенном стриме
+                // Добавить идентификатор зрителя
+                currentStream[index].consumers.push({consumerId: consumer._id, consumerStatus: 0});
+                // Передаем на клиента информацию о запущенном стриме
+                res.status(200).json({
+                        'port': currentStream[index].wsPort,
+                        'output': nnm
+                    })
                 }
             else{
                 // Если этот стрим сейчас не просматривается...
@@ -110,7 +116,11 @@ module.exports.open = async function(req, res){
                     show: showStream(stream)//показ потока
                 });
                 //activeConsumerStream[activeConsumerStream.length - 1].show.start();
-                res.status(200).json(stream.wsPort) // Передаем на клиента информацию о запущенном стриме
+                // Передаем на клиента информацию о запущенном стриме
+                res.status(200).json({
+                    'port': stream.wsPort,
+                    'output': nnm
+                })
             }
         }
     } catch (e) {
