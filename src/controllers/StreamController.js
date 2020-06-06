@@ -92,7 +92,7 @@ module.exports.open = async function(req, res){
             // Проверяем наличие в БД стрима и пользователя
             // Показывается ли этот поток уже
             const index = currentStream.findIndex(item => item._id.toString() == stream._id.toString() )
-            const nnm = await Nnm.findByIndex(item => item._id == "5eda574b878bd84cae2ff3fd");
+            const nnm = await Nnm.find({});
             console.log(nnm);
             if(index >= 0){
                     // Если такой стрим активен и просматривается ....
