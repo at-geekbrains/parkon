@@ -93,6 +93,7 @@ module.exports.open = async function(req, res){
             // Показывается ли этот поток уже
             const index = currentStream.findIndex(item => item._id.toString() == stream._id.toString())
             //nnmInit(); // создаем тестовую запись в nn_output
+            // находим все записи нужной камеры, сортируем по дате, берем последнею (с максимальной датой)
             const nnm = await Nnm.find({cam_id: stream._id.toString()}).sort({timestamp: -1}).limit(1);
             //console.log(nnm);
             if(index >= 0){
