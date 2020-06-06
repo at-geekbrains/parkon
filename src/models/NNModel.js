@@ -8,7 +8,7 @@ const nnSchema = new Schema({
     cam_id: {
         type: String,
     },
-    result: [{Number}],
+    result: [Number],
 })
 
 module.exports = mongoose.model('nn_outputs', nnSchema)
