@@ -92,7 +92,7 @@ module.exports.open = async function(req, res){
             // Проверяем наличие в БД стрима и пользователя
             // Показывается ли этот поток уже
             const index = currentStream.findIndex(item => item._id.toString() == stream._id.toString() )
-            const nnm = Nnm.find({'cam_id': stream._id.toString()});
+            const nnm = Nnm.find({'cam_id': stream._id.toString()}).limit(1);
             if(index >= 0){
                     // Если такой стрим активен и просматривается ....
                     // TODO - здесь возможен вариант что у пользователя на этот стрим может быть запущено несколько вкладок,
@@ -109,7 +109,7 @@ module.exports.open = async function(req, res){
                 // Если этот стрим сейчас не просматривается...
                 stream.consumers.push({consumerId: consumer._id, consumerStatus: 0}); // Добавить идентификатор зрителя
                 wsCurrentPort++;
-                stream.wsPort = process.env.PORT;// = wsCurrentPort;
+                stream.wsPort = wsCurrentPort;
                 currentStream.push(stream); // Поместить стрим в массив просматриваемых сейчас стримов
                 activeConsumerStream.push({
                     streamId: stream._id,
