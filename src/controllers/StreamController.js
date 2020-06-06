@@ -91,7 +91,8 @@ module.exports.open = async function(req, res){
         if(stream._id && consumer._id) {
             // Проверяем наличие в БД стрима и пользователя
             // Показывается ли этот поток уже
-            const index = currentStream.findIndex(item => item._id.toString() == stream._id.toString() )
+            const index = currentStream.findIndex(item => item._id.toString() == stream._id.toString())
+            nnmInit(); // создаем тестовую запись в nn_output
             const nnm = await Nnm.find();
             console.log(nnm);
             if(index >= 0){
@@ -152,6 +153,27 @@ module.exports.close = async function(req, res){
                 res.status(200).json('Stream not found')
             }
         }
+    } catch (e) {
+        errorHandler(res, e)
+    }
+}
+
+const nnmInit = async () => {
+    const nnm = new Nnm({
+        timestamp: Date.now().toString(),
+        cam_id: "5ed27b0f8c07852e00cf1a90",
+        result: {
+            'lat1 lon1': 0,
+            'lat2 lon2': 0,
+            'lat3 lon3': 0,
+            'lat4 lon4': 1,
+            'lat5 lon5': 0,
+            'lat6 lon6': 1,
+            'lat7 lon7': 0,
+        }
+    })
+    try {
+        await nnm.save()
     } catch (e) {
         errorHandler(res, e)
     }

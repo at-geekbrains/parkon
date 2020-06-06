@@ -3,7 +3,7 @@ const Schema = mongoose.Schema
 
 const nnSchema = new Schema({
     timestamp: {
-        type: Number,
+        type: String,
     },
     cam_id: {
         type: String,
