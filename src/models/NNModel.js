@@ -3,32 +3,32 @@ const Schema = mongoose.Schema
 
 const nnSchema = new Schema({
     timestamp: {
-        type: Double,
+        type: Number,
     },
     cam_id: {
         type: String,
     },
     result: {
             'lat1 lon1': {
-                type: Double
+                type: Number
             },
             'lat2 lon2': {
-                type: Double
+                type: Number
             },
             'lat3 lon3': {
-                type: Double
+                type: Number
             },
             'lat4 lon4': {
-                type: Double
+                type: Number
             },
             'lat5 lon5': {
-                type: Double
+                type: Number
             },
             'lat6 lon6': {
-                type: Double
+                type: Number
             },
             'lat7 lon7': {
-                type: Double
+                type: Number
             },
     },
 })
