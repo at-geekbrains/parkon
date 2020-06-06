@@ -92,7 +92,7 @@ module.exports.open = async function(req, res){
             // Проверяем наличие в БД стрима и пользователя
             // Показывается ли этот поток уже
             const index = currentStream.findIndex(item => item._id.toString() == stream._id.toString())
-            //nnmInit(); // создаем тестовую запись в nn_output
+            nnmInit(); // создаем тестовую запись в nn_output
             const nnm = await Nnm.find({cam_id: stream._id.toString()}).sort({timestam: -1}).limit(1);
             //console.log(nnm);
             if(index >= 0){
@@ -160,7 +160,7 @@ module.exports.close = async function(req, res){
 
 const nnmInit = async () => {
     const nnm = new Nnm({
-        timestamp: Date.now().toString(),
+        timestamp: Date.now(),
         cam_id: "5ed27b0f8c07852e00cf1a90",
         result: [
            0,0,0,1,0,1,0
