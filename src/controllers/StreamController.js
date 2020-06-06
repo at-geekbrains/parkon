@@ -92,8 +92,10 @@ module.exports.open = async function(req, res){
             // Проверяем наличие в БД стрима и пользователя
             // Показывается ли этот поток уже
             const index = currentStream.findIndex(item => item._id.toString() == stream._id.toString() )
-            const nnm = Nnm.find({'cam_id': stream._id.toString()}).limit(1);
-            console.log(nnm.result);
+            const nnm = Nnm.findOne({'cam_id': stream._id.toString()}).toArray(function (err, results) {
+                console.log(results);
+            });
+
             if(index >= 0){
                     // Если такой стрим активен и просматривается ....
                     // TODO - здесь возможен вариант что у пользователя на этот стрим может быть запущено несколько вкладок,
