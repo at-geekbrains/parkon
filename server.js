@@ -29,7 +29,7 @@ const message = {
 }
 /*********** CORS ***********/
 let corsOptions = {
-    origin: ' https://kradyedy.github.io/ParkOn/',
+    origin: ' https://kradyedy.github.io',
     optionsSuccessStatus: 204,
     credentials: true
 }
