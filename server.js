@@ -27,7 +27,12 @@ const port = process.env.PORT || 3000
 const message = {
     start:`Server has been started on ${port}!`
 }
-
+/*********** CORS ***********/
+let corsOptions = {
+    origin: ' https://kradyedy.github.io/ParkOn/',
+    optionsSuccessStatus: 204,
+    credentials: true
+}
 /*********** Server init ***********/
 const app = express();
 mongoose.connect(dbOptions.mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
@@ -43,7 +48,7 @@ app.use(passport.initialize())
 require('./src/middleware/passport')(passport)
 app.use(morgan('dev'))
 app.use(express.static(path.join(__dirname, "./public")));
-app.use(cors())
+app.use(cors(corsOptions))
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json())
 
