@@ -29,7 +29,7 @@ const message = {
 }
 /*********** CORS ***********/
 let corsOptions = {
-    origin: ' https://kradyedy.github.io',
+    origin: 'https://kradyedy.github.io',
     optionsSuccessStatus: 204,
     credentials: true
 }
@@ -48,7 +48,8 @@ app.use(passport.initialize())
 require('./src/middleware/passport')(passport)
 app.use(morgan('dev'))
 app.use(express.static(path.join(__dirname, "./public")));
-app.use(cors(corsOptions))
+// app.use(cors(corsOptions))
+app.use(cors())
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json())
 
