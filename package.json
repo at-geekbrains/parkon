@@ -32,7 +32,7 @@
     "node-fetch": "^2.6.0",
     "node-rtsp-stream": "0.0.9",
     "node-rtsp-stream-es6": "^1.0.7",
-    "nodemailer": "^6.4.6",
+    "nodemailer": "^6.4.16",
     "passport": "^0.4.1",
     "passport-jwt": "^4.0.0",
     "socket.io": "^2.3.0"
